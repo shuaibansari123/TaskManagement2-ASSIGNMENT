@@ -63,7 +63,7 @@ class TasksViewSet(CustomLoggingMixin, viewsets.ModelViewSet):
 
     @action(detail=True, methods=['post'], url_path='complete')
     def complete_Task(self, request, pk=None):
-        """Mark a Tasks as completed."""
+        # Mark a Tasks as completed.
         Tasks = self.get_object()
         if Tasks.status != 'in_progress':
             return Response({'error': 'Only Taskss in progress can be marked as completed.'}, status=status.HTTP_400_BAD_REQUEST)
@@ -74,7 +74,7 @@ class TasksViewSet(CustomLoggingMixin, viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'], url_path='overdue')
     def overdue_Tasks(self, request):
-        """Retrieve overdue Taskss."""
+        #Retrieve overdue Taskss.
         self.log_request(request)
         today = date.today()
         overdue_Taskss = Tasks.objects.filter(due_date__lt=today, status__in=['not_started', 'in_progress'])
@@ -105,7 +105,7 @@ class ProjectViewSet(CustomLoggingMixin, viewsets.ModelViewSet):
 
     @action(detail=True, methods=['get'], url_path='progress')
     def project_progress(self, request, pk=None):
-        """Calculate project progress."""
+        #Calculate project progress.#
         project = self.get_object()
         total_Taskss = project.Taskss.count()
         completed_Taskss = project.Taskss.filter(status='completed').count()
@@ -122,7 +122,7 @@ class TasksAssignmentViewSet(CustomLoggingMixin, viewsets.ModelViewSet):
 
     @action(detail=True, methods=['post'], url_path='assign')
     def assign_Tasks(self, request, pk=None):
-        """Assign a Tasks to a user."""
+        #Assign a Tasks to a user.#
         Tasks = self.get_object()
         user_id = request.data.get('user_id')
         user = User.objects.get(id=user_id)
@@ -132,7 +132,7 @@ class TasksAssignmentViewSet(CustomLoggingMixin, viewsets.ModelViewSet):
 
     @action(detail=True, methods=['post'], url_path='unassign')
     def unassign_Tasks(self, request, pk=None):
-        """Unassign a Tasks from a user."""
+        #Unassign a Tasks from a user.#
         Tasks = self.get_object()
         user_id = request.data.get('user_id')
         TasksAssignment.objects.filter(Tasks=Tasks, user_id=user_id).delete()

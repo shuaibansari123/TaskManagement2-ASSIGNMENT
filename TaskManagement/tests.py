@@ -36,7 +36,6 @@ class TaskAPITest(APITestCase):
 class TaskTests(TestCase):
 
     def test_create_task(self):
-        # Create a single task instance
         task = TaskFactory()
         self.assertEqual(task.status, 'To Do') 
         self.assertIsInstance(task.title, str)

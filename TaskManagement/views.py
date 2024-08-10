@@ -59,17 +59,16 @@ class TaskViewSet(CustomLoggingMixin, viewsets.ModelViewSet):
     def update(self, request, *args, **kwargs):
         self.log_request(request)
         print('worked....')
-        cache.delete('tasks_list')  # Invalidate cache on update
+        cache.delete('tasks_list') 
         return super().update(request, *args, **kwargs)
 
     def destroy(self, request, *args, **kwargs):
         self.log_request(request)
-        cache.delete('tasks_list')  # Invalidate cache on delete
+        cache.delete('tasks_list') 
         return super().destroy(request, *args, **kwargs)
 
     @action(detail=False, methods=['get'], url_path='completed')
     def completed_tasks(self, request):
-        """Retrieve completed tasks only."""
         self.log_request(request)
         completed_tasks = Task.objects.filter(status='completed')
         serializer = self.get_serializer(completed_tasks, many=True)

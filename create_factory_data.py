@@ -3,14 +3,13 @@ import django
 from django.utils import timezone
 
 # Set up Django environment otherwise this script wont run
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'TMS_v1.settings')  # Replace with your actual settings module
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'TMS_v1.settings')  
 django.setup()
 
-from TaskManagement.factories import TaskFactory  # Adjust import according to your app structure
+from TaskManagement.factories import TaskFactory 
 
 
 def create_fake_tasks(count=100):
-    """Create fake tasks using Factory Boy."""
     for _ in range(count):
         TaskFactory()
 
