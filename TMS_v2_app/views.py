@@ -3,9 +3,9 @@ from rest_framework import viewsets, status, filters
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
-from .models import Taskss, Project, TasksAssignment, Comment
+from .models import Tasks, Project, TaskAssignment, Comment
 from .serializers import TasksSerializer, ProjectSerializer, TasksAssignmentSerializer, CommentSerializer, ProjectProgressSerializer
-from .exceptions import TasksNotFoundException
+from .exceptions import TaskNotFoundException
 from django.core.cache import cache
 import logging
 from rest_framework.pagination import PageNumberPagination
@@ -117,7 +117,7 @@ class ProjectViewSet(CustomLoggingMixin, viewsets.ModelViewSet):
         return Response(serializer.data)
 
 class TasksAssignmentViewSet(CustomLoggingMixin, viewsets.ModelViewSet):
-    queryset = TasksAssignment.objects.all()
+    queryset = TaskAssignment.objects.all()
     serializer_class = TasksAssignmentSerializer
 
     @action(detail=True, methods=['post'], url_path='assign')
