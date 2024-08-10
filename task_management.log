@@ -1,0 +1,150 @@
+INFO 2024-08-10 15:22:42,444 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 15:22:57,567 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v1\settings.py changed, reloading.
+INFO 2024-08-10 15:22:58,767 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 15:23:08,283 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 15:50:29,543 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 15:53:13,502 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 15:53:45,479 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 15:59:43,906 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:00:06,085 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\views.py changed, reloading.
+INFO 2024-08-10 16:00:08,061 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:00:23,551 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\admin.py changed, reloading.
+INFO 2024-08-10 16:00:26,809 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:02:08,572 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\models.py changed, reloading.
+INFO 2024-08-10 16:02:11,922 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:02:22,736 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\admin.py changed, reloading.
+INFO 2024-08-10 16:02:24,554 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:02:31,300 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\admin.py changed, reloading.
+INFO 2024-08-10 16:02:35,546 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:02:58,323 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\views.py changed, reloading.
+INFO 2024-08-10 16:02:59,997 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:03:12,605 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\serializers.py changed, reloading.
+INFO 2024-08-10 16:03:15,662 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:04:11,527 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\views.py changed, reloading.
+INFO 2024-08-10 16:04:13,270 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:04:31,466 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\views.py changed, reloading.
+INFO 2024-08-10 16:04:33,192 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:04:48,284 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\urls.py changed, reloading.
+INFO 2024-08-10 16:04:51,372 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:05:08,410 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\urls.py changed, reloading.
+INFO 2024-08-10 16:05:11,679 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:05:26,934 autoreload C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\urls.py changed, reloading.
+INFO 2024-08-10 16:05:30,083 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:05:55,585 basehttp "GET /tasks HTTP/1.1" 301 0
+INFO 2024-08-10 16:05:56,235 basehttp "GET /tasks/ HTTP/1.1" 200 21285
+INFO 2024-08-10 16:05:56,806 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2024-08-10 16:05:57,337 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+ERROR 2024-08-10 16:06:02,709 log Internal Server Error: /tasks2/
+Traceback (most recent call last):
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: TMS_v2_app_tasks
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v2\TMS_v2_app\views.py", line 37, in list
+    cache.set('Taskss_list', queryset, timeout=60*5)
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\core\cache\backends\locmem.py", line 53, in set
+    pickled = pickle.dumps(value, self.pickle_protocol)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\models\query.py", line 353, in __getstate__
+    self._fetch_all()
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SAMSUNG\Desktop\Assignment-TaskManagement\TMS_v1\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: TMS_v2_app_tasks
+ERROR 2024-08-10 16:06:02,739 basehttp "GET /tasks2/ HTTP/1.1" 500 175040
+INFO 2024-08-10 16:06:51,658 autoreload Watching for file changes with StatReloader
+INFO 2024-08-10 16:06:53,508 basehttp "GET /admin/ HTTP/1.1" 200 12627
+INFO 2024-08-10 16:06:55,840 basehttp "GET /tasks2/ HTTP/1.1" 200 13245
+INFO 2024-08-10 16:06:55,914 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-08-10 16:06:55,915 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-08-10 16:07:07,173 basehttp "GET /admin/TMS_v2_app/tasks/add/ HTTP/1.1" 200 15170
+INFO 2024-08-10 16:07:07,579 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 16:07:07,650 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-08-10 16:07:07,796 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-08-10 16:07:08,043 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-08-10 16:07:23,774 basehttp "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 2455
+INFO 2024-08-10 16:07:34,692 basehttp "POST /admin/TMS_v2_app/tasks/add/ HTTP/1.1" 200 15370
+INFO 2024-08-10 16:07:34,782 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 16:07:38,457 basehttp "GET /admin/TMS_v2_app/project/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6487
+INFO 2024-08-10 16:07:38,574 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 16:07:58,776 basehttp "POST /admin/TMS_v2_app/project/add/?_to_field=id&_popup=1 HTTP/1.1" 200 328
+INFO 2024-08-10 16:07:58,910 basehttp "GET /static/admin/js/popup_response.js HTTP/1.1" 200 532
+INFO 2024-08-10 16:08:01,352 basehttp "POST /admin/TMS_v2_app/tasks/add/ HTTP/1.1" 302 0
+INFO 2024-08-10 16:08:01,409 basehttp "GET /admin/TMS_v2_app/tasks/1/change/ HTTP/1.1" 200 15684
+INFO 2024-08-10 16:08:01,500 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 16:08:01,691 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-08-10 16:08:07,644 basehttp "GET /tasks2/ HTTP/1.1" 200 13826
+INFO 2024-08-10 16:08:07,707 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-08-10 16:08:07,708 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+WARNING 2024-08-10 16:08:50,246 log Not Found: /task-assignment
+WARNING 2024-08-10 16:08:50,247 basehttp "GET /task-assignment HTTP/1.1" 404 16156
+INFO 2024-08-10 16:08:54,780 basehttp "GET /task-assignments HTTP/1.1" 301 0
+INFO 2024-08-10 16:08:54,857 basehttp "GET /task-assignments/ HTTP/1.1" 200 9170
+INFO 2024-08-10 16:09:06,933 basehttp "GET /admin/TMS_v2_app/taskassignment/add/ HTTP/1.1" 200 13451
+INFO 2024-08-10 16:09:07,022 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 16:09:12,531 basehttp "POST /admin/TMS_v2_app/taskassignment/add/ HTTP/1.1" 302 0
+INFO 2024-08-10 16:09:12,595 basehttp "GET /admin/TMS_v2_app/taskassignment/1/change/ HTTP/1.1" 200 13975
+INFO 2024-08-10 16:09:12,685 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 16:09:14,829 basehttp "GET /task-assignments/ HTTP/1.1" 200 9446
+INFO 2024-08-10 16:09:21,544 basehttp "GET /admin/TMS_v2_app/project/add/ HTTP/1.1" 200 12785
+INFO 2024-08-10 16:09:21,601 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 16:09:21,616 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-08-10 16:09:21,621 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-08-10 16:09:21,897 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-08-10 16:09:29,534 basehttp "GET /projects HTTP/1.1" 301 0
+INFO 2024-08-10 16:09:29,588 basehttp "GET /projects/ HTTP/1.1" 200 12128
+INFO 2024-08-10 16:09:29,651 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-08-10 16:09:29,728 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
